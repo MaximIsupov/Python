@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<title>Обработка данных форм</title>
+</head>
+<body>
+    <form action="/cgi-bin/add_student.py">
+        <h1>Добавить студента в БД:</h1>
+        <div>ID</div>
+        <input type="number" name = "id">
+        <div>Имя</div>
+        <input type="text" name="name">
+        <div>Фамилия</div>
+        <input type="text" name="surname">
+        <div>Группа</div>
+        <input type="text" name = "group">
+        <p><input type="submit"></p>
+    </form>
+    <form action="/cgi-bin/add_group.py">
+        <h1>Добавить группу в БД:</h1>
+        <div>Номер группы</div>
+        <input type="text" name = "num">
+        <div>Факультет</div>
+        <input type="text" name="fakulcy_name">
+        <p><input type="submit"></p>
+    </form>
+    <form action="/cgi-bin/add_fakulcy.py">
+        <h1>Добавить факультет в БД:</h1>
+        <div>Название факультета</div>
+        <input type="text" name = "fakulcy_name">
+        <p><input type="submit"></p>
+    </form>
+</body>
+</html>
